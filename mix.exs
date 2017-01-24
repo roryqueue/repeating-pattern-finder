@@ -28,6 +28,9 @@ defmodule FindPattern.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:distillery, "~> 1.0"}]
+    [
+      {:distillery, "~> 1.0", only: :dev},
+      {:credo, "~> 0.5", only: :dev}
+    ]
   end
 end
