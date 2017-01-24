@@ -7,6 +7,7 @@ defmodule FindPattern.Mixfile do
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     escript: [main_module: FindPattern.CLI],
      deps: deps()]
   end
 
@@ -27,6 +28,6 @@ defmodule FindPattern.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:distillery, "~> 1.0"}]
   end
 end
