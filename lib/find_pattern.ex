@@ -1,9 +1,5 @@
 defmodule FindPattern do
 
-  def main(args) do
-    IO.inspect args
-  end
-
   def shortest_repeating_pattern(input_string, counter \\ 0) do
     test_pattern = String.slice(input_string, 0..counter)
     if pattern_matches?(test_pattern, input_string) do
