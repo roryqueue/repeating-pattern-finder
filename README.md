@@ -1,24 +1,3 @@
-# FindPattern
+# Repeating Pattern Finder
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add `find_pattern` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:find_pattern, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `find_pattern` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:find_pattern]]
-    end
-    ```
-
+Example command line tool, when given a string consisting of a repeating pattern and ending with all or part of that pattern via argument or stdin, prints shortest such pattern.
